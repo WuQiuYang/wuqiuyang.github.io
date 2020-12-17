@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>叶子</title>
+
+    <!-- 样式 -->
+    <style>
+        *{margin:0;padding:0;list-style:none;}
+
+        /* 选中 <body> 标签 */
+        body { 
+            background:#000; /* 背景颜色 */
+            height: 100vh;
+            display: flex;  /* 弹性盒子布局 */
+            justify-content: center; /* 子元素水平居中 */
+            align-items: center; /* 子元素垂直居中 */
+        }
+        
+        /* 选中 class="main" 的标签 */
+        .main {
+            color: white; /* 字体颜色 */
+            font-size: 20px; /* 字体大小 */
+        }
+        /* 选中 class="pig" 的标签 */
+        .pig {
+            color: red;
+            animation: transformColor 4s infinite; /* 添加动画 transformColor */
+        }
+
+        /* 定义动画 */
+        @keyframes transformColor {
+            0% {
+                color: red;
+            }
+            33% {
+                color: blue;
+            }
+            66% {
+                color: yellow;
+            }
+            100% {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 主要内容区 -->
+    <div class="main">叶子是<span class="pig">懒猪🐷</span></div>
+</body>
+</html>
